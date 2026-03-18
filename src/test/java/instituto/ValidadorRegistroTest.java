@@ -61,8 +61,8 @@ public class ValidadorRegistroTest {
     @DisplayName("Reto 5: Edad límite")
     public void Edad_sin_limite(){
         int edad = 16;
-        boolean esValido = edad == 16;
-        assertTrue(esValido, "Error: La edad solo deber ser igual a 16");
+        assertEquals(edad,16, "Error: La edad debe ser exactamente 16");
     }
+    //En este reto en concreto usamos assertEquals(), ya que nos pide que la edad sa exactamente 16
 
 }
