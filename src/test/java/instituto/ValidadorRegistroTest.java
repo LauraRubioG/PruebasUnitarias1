@@ -23,7 +23,7 @@ public class ValidadorRegistroTest {
 
     //Reto1: Nombre Vacio
     @Test
-    @DisplayName("nombre vacio")
+    @DisplayName("Reti 1: Nombre vacío")
     public void Nombre_Vacio(){
         String nombre = "";
         boolean esValido = nombre.length() > 0;
@@ -31,7 +31,7 @@ public class ValidadorRegistroTest {
     }
     //Reto2: Password justa
     @Test
-    @DisplayName("password justa")
+    @DisplayName("Reto 2: Password justa")
     public void Password_Justa(){
         String password = "12345678";
         boolean esValido = password.length() >= 8;
@@ -40,7 +40,7 @@ public class ValidadorRegistroTest {
 
     //Reto3: Password corta
     @Test
-    @DisplayName("password corta")
+    @DisplayName("Reto 3: Password Corta")
     public void Password_corta(){
         String password = "Admin";
         boolean esValido = password.length() >= 8;
@@ -49,7 +49,7 @@ public class ValidadorRegistroTest {
 
     //Reto4: Email sin arroba
     @Test
-    @DisplayName("email sin arroba")
+    @DisplayName("Reto 4: Email sin arroba")
     public void Email_sin_Aroba(){
         String email = "usuario.gmail.com";
         boolean esValido = email.contains("@");
@@ -58,7 +58,7 @@ public class ValidadorRegistroTest {
 
     //Reto5: Edad limite
     @Test
-    @DisplayName("edad sin limite")
+    @DisplayName("Reto 5: Edad límite")
     public void Edad_sin_limite(){
         int edad = 16;
         boolean esValido = edad == 16;
