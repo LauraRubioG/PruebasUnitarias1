@@ -61,7 +61,7 @@ public class ValidadorRegistroTest {
     @DisplayName("edad sin limite")
     public void Edad_sin_limite(){
         int edad = 16;
-        boolean esValido = edad >= 16;
+        boolean esValido = edad == 16;
         assertTrue(esValido, "El sistema debería aceptar la edad");
     }
 
