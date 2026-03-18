@@ -27,7 +27,7 @@ public class ValidadorRegistroTest {
     public void Nombre_Vacio(){
         String nombre = "";
         boolean esValido = nombre.length() > 0;
-        assertFalse(esValido, "El sistema debería rechar el nombre");
+        assertFalse(esValido, "Error: El nombre debería estar vacio");
     }
     //Reto2: Password justa
     @Test
@@ -35,7 +35,7 @@ public class ValidadorRegistroTest {
     public void Password_Justa(){
         String password = "12345678";
         boolean esValido = password.length() >= 8;
-        assertTrue(esValido, "El sistema deberia aceptar la contraseña");
+        assertTrue(esValido, "Error: La contraseña debería tener una longitud de 8 o mas caracteres");
     }
 
     //Reto3: Password corta
@@ -44,7 +44,7 @@ public class ValidadorRegistroTest {
     public void Password_corta(){
         String password = "Admin";
         boolean esValido = password.length() >= 8;
-        assertFalse(esValido, "");
+        assertFalse(esValido, "Error: La contraseña debería tener una longitud de menos de 8 caracteres");
     }
 
     //Reto4: Email sin arroba
@@ -53,7 +53,7 @@ public class ValidadorRegistroTest {
     public void Email_sin_Aroba(){
         String email = "usuario.gmail.com";
         boolean esValido = email.contains("@");
-        assertFalse(esValido, "El sistema debería rechazar el email");
+        assertFalse(esValido, "Error: El usuario no debe tener @");
     }
 
     //Reto5: Edad limite
@@ -62,7 +62,7 @@ public class ValidadorRegistroTest {
     public void Edad_sin_limite(){
         int edad = 16;
         boolean esValido = edad == 16;
-        assertTrue(esValido, "El sistema debería aceptar la edad");
+        assertTrue(esValido, "Error: La edad solo deber ser igual a 16");
     }
 
 }
