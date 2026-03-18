@@ -32,8 +32,8 @@ Se han desarrollado pruebas específicas para cubrir diferentes escenarios de va
 ## 🚀 Instalación y Ejecución Local
 
 Una vez hecho los retos le damos a ejecutar y comprobamos en la consula que todo se ha ejecitado correctamente como vemos en la foto
-![Captura de los tests superados con éxito]()
-![Captura de los tests superados con éxito]()
+![Captura de los tests superados con éxito](primerafoto.png)
+![Captura de los tests superados con éxito](segundafoto.png)
 
 
 ### 1. Clonar el repositorio
