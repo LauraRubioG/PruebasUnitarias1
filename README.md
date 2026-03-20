@@ -35,6 +35,19 @@ Una vez hecho los retos le damos a ejecutar y comprobamos en la consula que todo
 ![Captura de los tests superados con éxito](primerafoto.png)
 ![Captura de los tests superados con éxito](segundafoto.png)
 
+## 📂 Estructura del Proyecto
+
+A continuación se detalla la organización de los archivos y directorios de este repositorio:
+
+* 📁 **`.idea/`**: Contiene los archivos de configuración y preferencias específicas del entorno de desarrollo (IntelliJ IDEA).
+* 📁 **`src/`**: Es el directorio principal del código fuente. Tradicionalmente en proyectos Maven se divide en:
+  * `main/java/`: Donde se encuentra la lógica de la aplicación (la clase `ValidadorRegistro.java`).
+  * `test/java/`: Donde se encuentran las clases con las pruebas unitarias de JUnit.
+* 📄 **`pom.xml`**: Archivo de configuración de Maven. Aquí se definen las dependencias del proyecto, como JUnit 5.
+* 📄 **`.gitignore`**: Le indica a Git qué archivos y carpetas no deben subirse al repositorio (como archivos temporales o compilados).
+* 📄 **`README.md`**: Es este mismo archivo, que sirve como documentación principal del proyecto.
+* 🖼️ **`primerafoto.png`** y **`segundafoto.png`**: Capturas de pantalla que demuestran la correcta ejecución de los tests en la consola.
+
 
 ### 1. Clonar el repositorio
 Abre tu terminal o tu IDE y ejecuta el siguiente comando:
